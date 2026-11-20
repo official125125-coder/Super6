@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="SUPER6 Official Website">
+  <title>SUPER6 | Official</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- BACKGROUND -->
+  <div class="background-effect" aria-hidden="true">
+    <div class="gold-glow glow-one"></div>
+    <div class="gold-glow glow-two"></div>
+    <div class="gold-line line-one"></div>
+    <div class="gold-line line-two"></div>
+    <div class="particles"></div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="#home" class="brand">
+        <div class="brand-logo-wrap">
+          <img src="images/logo.png" alt="SUPER6" class="brand-logo">
+        </div>
+        <div class="brand-text">
+          <strong>SUPER6</strong>
+          <span>OFFICIAL</span>
+        </div>
+      </a>
+
+      <div class="online-status">
+        <span class="online-dot"></span>
+        ONLINE 24/7
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- WELCOME -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="small-title">WELCOME TO</p>
+        <h1>SUPER<span>6</span></h1>
+        <p class="hero-description">
+          Premium entertainment and professional
+          customer service available 24/7.
+        </p>
+
+        <div class="hero-badges">
+          <span class="mini-badge">✦ PREMIUM</span>
+          <span class="mini-badge">✦ FAST SERVICE</span>
+          <span class="mini-badge">✦ 24/7 SUPPORT</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMOTIONS -->
+    <section class="section" id="promotions">
+      <div class="section-heading">
+        <span class="section-line"></span>
+        <div>
+          <p>SUPER6 REWARDS</p>
+          <h2>Promotion & Bonus</h2>
+        </div>
+        <span class="section-line"></span>
+      </div>
+
+      <div class="bonus-grid">
+        <article class="bonus-card">
+          <div class="bonus-icon">🎁</div>
+          <div>
+            <span>WELCOME BONUS</span>
+            <strong>30%</strong>
+          </div>
+        </article>
+
+        <article class="bonus-card">
+          <div class="bonus-icon">🤝</div>
+          <div>
+            <span>RECOMMEND BONUS</span>
+            <strong>20%</strong>
+          </div>
+        </article>
+
+        <article class="bonus-card">
+          <div class="bonus-icon">💰</div>
+          <div>
+            <span>DAILY 1ST DEPOSIT</span>
+            <strong>20%</strong>
+          </div>
+        </article>
+
+        <article class="bonus-card">
+          <div class="bonus-icon">💎</div>
+          <div>
+            <span>UNLIMITED DEPOSIT</span>
+            <strong>10%</strong>
+          </div>
+        </article>
+
+        <article class="bonus-card">
+          <div class="bonus-icon">🎯</div>
+          <div>
+            <span>DAILY REBATE</span>
+            <strong>DAILY</strong>
+          </div>
+        </article>
+
+        <article class="bonus-card">
+          <div class="bonus-icon">👑</div>
+          <div>
+            <span>WEEKLY REBATE</span>
+            <strong>EVERY MONDAY</strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- GROUP CHANNEL -->
+    <section class="section" id="channels">
+      <div class="section-heading">
+        <span class="section-line"></span>
+        <div>
+          <p>OFFICIAL COMMUNITY</p>
+          <h2>Group Channel</h2>
+        </div>
+        <span class="section-line"></span>
+      </div>
+
+      <div class="channel-grid">
+
+        <a href="https://wa.link/wm4yy0"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="channel-card">
+
+          <div class="social-logo-box whatsapp-bg">
+            <img src="images/whatsapp.png"
+                 alt="WhatsApp"
+                 class="social-logo">
+          </div>
+
+          <div class="channel-info">
+            <span>OFFICIAL CONTACT</span>
+            <strong>WhatsApp SUPER6</strong>
+            <small>Contact us on WhatsApp</small>
+          </div>
+          <span class="channel-arrow">→</span>
+        </a>
+
+        <a href="https://t.me/Super6gaming"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="channel-card">
+
+          <div class="social-logo-box telegram-bg">
+            <img src="images/telegram.png"
+                 alt="Telegram"
+                 class="social-logo">
+          </div>
+
+          <div class="channel-info">
+            <span>OFFICIAL CHANNEL</span>
+            <strong>Telegram SUPER6</strong>
+            <small>Join our official Telegram</small>
+          </div>
+          <span class="channel-arrow">→</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- GAME LIST -->
+    <section class="section game-section" id="games">
+      <div class="section-heading">
+        <span class="section-line"></span>
+        <div>
+          <p>SUPER6 PROVIDERS</p>
+          <h2>Game List</h2>
+        </div>
+        <span class="section-line"></span>
+      </div>
+
+      <p class="game-description">
+        Select your favourite game
+      </p>
+
+      <div class="game-grid" id="gameGrid"></div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <img src="images/logo.png" alt="SUPER6">
+    <strong>SUPER6</strong>
+    <p>Premium Service • Online 24/7</p>
+    <span>© 2026 SUPER6</span>
+  </footer>
+
+  <!-- GAME PROVIDER POPUP -->
+  <div class="modal"
+       id="gameModal"
+       aria-hidden="true">
+
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+
+    <div class="modal-box"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="modalGameName">
+
+      <button class="modal-close"
+              id="modalClose"
+              type="button"
+              aria-label="Close popup">×</button>
+
+      <!-- PROVIDER LOGO, NOT SUPER6 LOGO -->
+      <div class="popup-logo-box">
+        <img id="modalGameLogo"
+             class="modal-logo"
+             alt="Game Provider"
+             style="display:none;">
+
+        <div id="modalLogoFallback"
+             class="popup-logo-fallback"
+             style="display:none;">🎰</div>
+      </div>
+
+      <p class="modal-small">SUPER6 CUSTOMER SERVICE</p>
+
+      <h3 id="modalGameName">GAME</h3>
+
+      <p class="modal-description">
+        Contact our Customer Service for more information.
+      </p>
+
+      <div class="modal-buttons">
+
+        <a href="https://wa.link/wm4yy0"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="contact-button whatsapp-button">
+
+          <div class="contact-logo-box">
+            <img src="images/whatsapp.png"
+                 alt="WhatsApp"
+                 class="contact-logo">
+          </div>
+
+          <div class="contact-text">
+            <small>CUSTOMER SERVICE</small>
+            <strong>WhatsApp</strong>
+          </div>
+          <span class="contact-arrow">→</span>
+        </a>
+
+        <a href="https://t.me/VipSuper6"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="contact-button telegram-button">
+
+          <div class="contact-logo-box">
+            <img src="images/telegram.png"
+                 alt="Telegram"
+                 class="contact-logo">
+          </div>
+
+          <div class="contact-text">
+            <small>CUSTOMER SERVICE</small>
+            <strong>Telegram</strong>
+          </div>
+          <span class="contact-arrow">→</span>
+        </a>
+
+      </div>
+
+      <div class="modal-status">
+        <span></span>
+        Customer Service Online 24/7
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
